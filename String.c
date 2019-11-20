@@ -20,7 +20,7 @@ printf("%d\n", strlen(name));
 //String comparison
 
 // strncmp compares between two strings, returning the number 0 if they are equal,
-//The arguments are the two strings to be compared, and the maximum comparison length.
+// The arguments are the two strings to be compared, and the maximum comparison length.
 char *name = "John";
 
 if (strncmp(name, "John", 4) == 0)
@@ -39,6 +39,6 @@ else
 char dest[20] = "Hello";
 char src[20] = "World";
 strncat(dest, src, 3);
-printf("%s\n", dest);
-strncat(dest, src, 20);
+printf("%s\n", dest); // "HelloWor"
+strncat(dest, src, 20); //"HelloWorld"
 printf("%s\n", dest);
